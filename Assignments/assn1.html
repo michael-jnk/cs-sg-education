@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style1.css" rel="stylesheet">
     <title>Intro to HTML & CSS - MJ</title>
+    <!-- Made by Michael Jenkins -->
+    <!-- 
+        As a disclaimer, I started doing some HTML/CSS self-study ever since CSSG's first
+        meeting two weeks ago, so this should explain the use of some tags & techniques we
+        haven't been taught yet.
+    -->
 </head>
 <body>
-    
+    <div id="top">
+        <h1>CS+SG Lesson 1 - HTML & CSS</h1>
+        <p>By Michael Jenkins</p>
+    </div>
+    <div id="what-is">
+        <h2>What is HTML & CSS</h2>
+        <p>
+            HTML, CSS, and JavaScript are the three components that make up websites today.
+            <strong>HTML</strong> is the base components & structure of a website, 
+            <strong>CSS</strong> creates the look of all the elememts on it, and 
+            <strong>JavaScript</strong> adds extra function & interactability to HTML elements. <br \>
+            This website will go over the basic structure of HTML and CSS files, as well as 
+            showing some common elements in each.
+        </p>
+    </div>
+    <div id="html">
+    <div id="html-file">
+        <h2>HTML File Structure</h2>
+        <p>
+            A typical HTML file begins with two tags - 
+            <span class="code">&lt!DOCTYPE html&gt</span> and <span class="code">&lthtml lang="en"&gt</span>
+            , which simply state the file is an HTML file written in English, but the rest of the file is
+            contained inside the <span class="code">&lthead&gt</span> and <span class="code">&ltbody&gt</span> tags.
+        </p>
+    </div>
+    <div id="html-head">
+        <h2>&lthead&gt</h2>
+        <p>
+            Within the <span class="code">&lthead&gt</span> tag is all the metadata & information
+            about the website that isn't displayed on the page. To demonstrate, I'll show the
+            head of this file, and explain what each part means:
+        </p>
+        <pre class="code-block">
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &ltlink href="style1.css" rel="stylesheet"&gt
+    &lttitle&gtIntro to HTML & CSS - MJ&lt/title&gt
+&lt/head&gt
+        </pre>
+        <p>
+            First, the <span class="code">&ltmeta&gt</span>
+        </p>
+    </div>
+    </div>
 </body>
 </html>
