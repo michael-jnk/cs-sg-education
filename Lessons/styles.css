@@ -6,3 +6,21 @@
 .text-box {
     border: 2px solid blue;
 }
+
+.flex-container {
+    height:800px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid red
+}
+
+.flex-item {
+    width:200px;
+    height:200px;
+    border: 1px solid blue;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
