@@ -141,6 +141,23 @@ body {
     }
 }
 
+#about-me {
+    height: 100vh;
+    background-color: var(--bg-color);
+    >p {
+        color: var(--text-color);
+        font-size: larger;
+        margin: 0% 20% 4% 25%;
+    }
+}
+
+.section-title {
+    margin-top: 100px;
+    color: var(--hl-color);
+    font-size: 300%;
+    margin-left: 18%;
+}
+
 .name {
     color: var(--hl-color);
 }
