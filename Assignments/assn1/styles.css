@@ -1,5 +1,5 @@
 /* placeholder to see borders of divs */
-div {
+div:not(#header) {
     border: 1px solid black;
 }
 
@@ -21,6 +21,9 @@ body {
 #main {
     padding: 8px;
     padding-top: 9%;
+    > * {
+        margin: 5px auto 5px auto;
+    }
 }
 
 #title {
@@ -38,7 +41,6 @@ body {
     background-color: var(--bg-color);
     box-shadow: 0px 0px 50px var(--bg-color);
 
-    border: 0px solid; /*can remove when div borders are removed*/
     padding:20px;
     display: flex;
     justify-content: space-between;
