@@ -1,5 +1,5 @@
 /* placeholder to see borders of divs */
-div:not(#header, #intro *, #education *) {
+div:not(#header, #intro *, #education *, #projects *) {
     border: 1px solid black;
 }
 
@@ -232,6 +232,57 @@ body {
         &:nth-child(3) {
             align-self: flex-end;
         }
+    }
+}
+
+#projects {
+    min-height: 700px;
+    background-color: var(--bg-color);
+    >.projects-box {
+        width: 80%;
+        height: 300px;
+        margin-left: 10%;
+        display: flex;
+        border: 2px solid var(--hl-color);
+        border-radius: 7px;
+        >.projects-flex {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            background-color: var(--hl-color);
+            >.projects-item {
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid var(--hl-color);
+                border-radius: 10px;
+                background-color: var(--bg-color);
+                >h3 {
+                    color: var(--hl-color);
+                    font-weight: 600;
+                }
+                &:not(&:first-child) {
+                    margin-top: 2%;
+                }
+            }
+        }
+        >#project-example {
+            flex-grow: 2000; /*idk why this works??*/
+            padding: 2%;
+            border-left: 2px solid var(--hl-color);
+            >h3 {
+                color: var(--hl-color);
+                font-weight: 600;
+            }
+            >p {
+                color: var(--text-color);
+            }
+        }
+    }
+    >.section-title {
+        margin-bottom: 5%;
     }
 }
 
