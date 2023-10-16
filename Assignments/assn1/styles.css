@@ -6,6 +6,9 @@
     --nav-color: #293241;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* blue-white-orange palette
     --bg-color: #3d5B81;
@@ -37,6 +40,7 @@ body {
     /* padding-top: 9%; */
     > * {
         /* margin: 5px auto 5px auto; */
+        scroll-margin-top: 150px;
     }
 }
 
@@ -200,7 +204,7 @@ body {
 }
 
 #about-me {
-    min-height: 700px;
+    min-height: 600px;
     background-color: var(--bg-color);
     >p {
         color: var(--text-color);
@@ -265,12 +269,12 @@ body {
     min-height: 700px;
     background-color: var(--bg-color);
     >.projects-box {
-        width: 80%;
-        height: 300px;
-        margin-left: 10%;
+        height: 400px;
+        margin: 6% 15% 0 15%;
         display: flex;
         border: 2px solid var(--hl-color);
         border-radius: 7px;
+        background-color: var(--hl-color);
         >.projects-flex {
             width: 20%;
             display: flex;
@@ -288,6 +292,7 @@ body {
                 >h3 {
                     color: var(--hl-color);
                     font-weight: 600;
+                    font-size: 1.75cqw;
                 }
                 &:not(&:first-child) {
                     margin-top: 2%;
@@ -297,10 +302,13 @@ body {
         >#project-example {
             flex-grow: 2000; /*idk why this works??*/
             padding: 2%;
-            border-left: 2px solid var(--hl-color);
+            border: 2px solid var(--hl-color);
+            border-radius: 7px;
+            background-color: var(--bg-color);
             >h3 {
                 color: var(--hl-color);
                 font-weight: 600;
+                font-size: 2.5cqw;
             }
             >p {
                 color: var(--text-color);
@@ -313,14 +321,14 @@ body {
 }
 
 #skills {
-    min-height: 700px;
+    min-height: 550px;
     background-color: var(--bg-color);
     padding-bottom: 5%;
     >.section-title {
         margin-bottom: 5%;
     }
     >#skills-flexbox {
-        margin: 5%;
+        margin: 0% 15% 0% 15%;
         min-height: 400px;
         display: flex;
         flex-wrap: wrap;
@@ -331,7 +339,7 @@ body {
             border-radius: 5px;
             position: relative;
             width: 15%;
-            margin: 2% 5% 2% 5%;
+            margin: 2% 5% 5% 5%;
             padding: auto 5% auto 5%;
             /* background-color: var(--hl-color); */
             >.skills-overlay {
@@ -358,11 +366,11 @@ body {
                 >p {
                     margin:15% 0% 15% 0%;
                     &:first-child {
-                        font-size: 2.5cqw;
+                        font-size: 2cqw;
                         font-weight: 600;
                     }
                     &:last-child {
-                        font-size: 2cqw;
+                        font-size: 1.75cqw;
                     }
                 }
                 
