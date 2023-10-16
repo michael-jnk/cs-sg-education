@@ -341,6 +341,9 @@ body {
             border: 2px solid var(--hl-color);
             border-radius: 7px;
             background-color: var(--bg-color);
+            > :not(.project-default) {
+                display: none;
+            }
             >h3 {
                 color: var(--hl-color);
                 font-weight: 600;
