@@ -33,10 +33,10 @@ body {
 }
 
 #main {
-    padding: 8px;
+    /* padding: 8px; */
     /* padding-top: 9%; */
     > * {
-        margin: 5px auto 5px auto;
+        /* margin: 5px auto 5px auto; */
     }
 }
 
@@ -124,7 +124,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid;
     background-color: var(--bg-color);
     >div{
         margin-top: 0px;
@@ -208,6 +207,7 @@ body {
         font-size: larger;
         margin: 0% 20% 4% 25%;
     }
+    padding-bottom: 1px;
 }
 
 #education {
@@ -216,35 +216,48 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 10%;
+    align-items: center;
     /* align-items: center; */
     >.section-title {
         align-self:baseline;
     }
     >.ed-school {
-        max-width: 400px;
+        /* max-width: 400px; */
         padding:0% 10% 0% 10%;
         margin: auto 10% auto 10%;
-        >h3 {
-            font-size: 200%;
-            color: var(--hl-color);
-            margin-bottom: 0%;
-        }
-        >p {
-            color: var(--text-color);
-            font-style: italic;
-            opacity: 0.7;
-        }
-        >ul {
-            padding-left: 0%;
-            >li {
-                display: flex;
-                color: var(--text-color);
-                margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        >div {
+            min-width:400px;
+            >h3 {
+                font-size: 200%;
+                color: var(--hl-color);
+                margin-bottom: 0%;
             }
+            >p {
+                color: var(--text-color);
+                font-style: italic;
+                opacity: 0.7;
+            }
+            >ul {
+                padding-left: 0%;
+                >li {
+                    display: flex;
+                    color: var(--text-color);
+                    margin-bottom: 10px;
+                }
+            }
+            
         }
-        &:nth-child(3) {
+        >img {
+            width:40%;
+            height:100%;
+            margin:5% 5% 0% 5%;
+            border-radius: 10px;
+        }
+        /* &:nth-child(3) {
             align-self: flex-end;
-        }
+        } */
     }
 }
 
