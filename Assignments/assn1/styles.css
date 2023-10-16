@@ -1,9 +1,27 @@
 :root {
-    --nav-color: #27159b;
+    --bg-color: #3d5B81;
+    --hl-color: #9bc0d9;
+    --text-color: #dffbfc;
+    --big-text-color: #ee6b4D;
+    --nav-color: #293241;
+}
+
+
+/* blue-white-orange palette
+    --bg-color: #3d5B81;
+    --hl-color: #9bc0d9;
+    --text-color: #dffbfc;
+    --big-text-color: #ee6b4D;
+    --nav-color: #293241;
+*/
+
+/* default pallette
     --bg-color: #454a8a;
     --hl-color: #d8c815;
     --text-color: #ffffff;
-}
+    --big-text-color: #000000;
+    --nav-color: #27159b;
+*/
 
 * {
     font-family: 'Onest', Verdana, sans-serif;
@@ -45,7 +63,7 @@ body {
     /* & * {border: 1px solid;} */
     & a {
         text-decoration: none;
-        color: var(--hl-color);
+        color: var(--big-text-color);
         text-shadow: 0px 0px 3px var(--hl-color);
     }
     >a {
@@ -58,7 +76,7 @@ body {
             font-size: 300%;
             margin: auto;
             &:hover {
-                text-shadow: 0px 0px 10px var(--hl-color);
+                text-shadow: 0px 0px 10px var(--big-text-color);
             }
         }
     }
@@ -74,12 +92,13 @@ body {
             margin: 2px 15px 2px 10px;
             padding: 1px;
             > a {
+                color: var(--hl-color);
                 font-weight: 600;
                 font-size: 180%;
             }
             &:hover {
-                border: 2px solid var(--hl-color);
-                margin: 0px 13px 0px 8px;
+                /* border: 2px solid var(--hl-color);
+                margin: 0px 13px 0px 8px; */
                 border-radius: 5px;
                 >a {
                     text-shadow: 0px 0px 10px var(--hl-color);
@@ -367,11 +386,11 @@ body {
 
 .section-title {
     margin-top: 0px;
-    color: var(--hl-color);
+    color: var(--big-text-color);
     font-size: 300%;
     margin-left: 18%;
 }
 
 .name {
-    color: var(--hl-color);
+    color: var(--big-text-color);
 }
