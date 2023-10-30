@@ -1,11 +1,9 @@
 "use client";
 
 export default function ProjectDisplay() {
-    const projNames = ["default", "java", "gamejam", "site"];
     
-    function displayClick(pNumb) {
+    function displayClick(projectName) {
         console.log("literally anything")
-        const projectName = projNames[pNumb];
         console.log(document.getElementById("project-example").children)
         for (let element of document.getElementById("project-example").children) {
             console.log(element)
@@ -23,11 +21,13 @@ export default function ProjectDisplay() {
     return(
         <div class="projects-box">
             <div id="projects-flex">
-                <div class="projects-item" onClick={() => displayClick(1)}>
+                <div class="projects-item" onClick={() => displayClick("java")}>
                     <h3 id="project-java">Java Games</h3>
-                </div><div class="projects-item" onClick={() => displayClick(2)}>
+                </div><div class="projects-item" onClick={() => displayClick("gamejam")}>
                     <h3 id="project-gamejam">Game Jam '23</h3>
-                </div><div class="projects-item" onClick={() => displayClick(3)}>
+                </div><div class="projects-item" onClick={() => displayClick("hacknc")}>
+                    <h3 id="project-hacknc">HackNC '23</h3>
+                </div><div class="projects-item" onClick={() => displayClick("site")}>
                     <h3 id="project-site">This Site</h3>
                 </div>
             </div>
@@ -37,33 +37,42 @@ export default function ProjectDisplay() {
                     <p class="project-desc">...</p>
                 </div>
                 <div class="project-java">
-                <h3 class="project-name">Java Swing Projects</h3>
-                <ul class="project-desc">
-                    <li>Various games made in Java's Swing and Graphics libraries</li>
-                    <li>Applying intermediate Java skills and object-oriented concepts like
-                        Inheritance, Polymorphism, and Abstraction</li>
-                    <li>Includes a demake of Wii Play's "Tanks", a replication of one of
-                        the "Worms" games, and a test 3D-wireframe space game</li>
-                </ul>
+                    <h3 class="project-name">Java Swing Projects</h3>
+                    <ul class="project-desc">
+                        <li>Various games made in Java's Swing and Graphics libraries</li>
+                        <li>Applying intermediate Java skills and object-oriented concepts like
+                            Inheritance, Polymorphism, and Abstraction</li>
+                        <li>Includes a demake of Wii Play's "Tanks", a replication of one of
+                            the "Worms" games, and a test 3D-wireframe space game</li>
+                    </ul>
                 </div>
-                <div class="project-gamejam">
-                <h3 class="project-name">2023 North Carolina Collegiate Game Jam</h3>
-                <p class="project-desc">
-                    My first game jam, on October 14th - 22nd. This is in-progress,
-                    with my 4 teammates and I still hard at work for the rest of the
-                    week!
-                </p>
-                <p class="project-desc">
-                    We are currently using Godot and gdscript to create our game.
-                </p>
+                    <div class="project-gamejam">
+                    <h3 class="project-name">2023 North Carolina Collegiate Game Jam</h3>
+                    <p class="project-desc">
+                        My first game jam, on October 14th - 22nd. My team of 4 submitted
+                        our project, and are awaiting results to be released!
+                    </p>
+                    <p class="project-desc">
+                        We used Godot and gdscript to create our game.
+                    </p>
+                </div>
+                    <div class="project-hacknc">
+                    <h3 class="project-name">HackNC 2023</h3>
+                    <p class="project-desc">
+                        My first hackathon, where my team of 4 made the project "Pocket
+                        Garden", and won the "Best Farming Simulator" track!
+                    </p>
+                    <p class="project-desc">
+                        We used Godot and gdscript to create our app.
+                    </p>
                 </div>
                 <div class="project-site">
-                <h3 class="project-name">This Website!</h3>
-                <p class="project-desc">
-                    As a member of UNC's CS + Social Good Education Team, this
-                    website is a practice project to show my knowledge of HTML & CSS
-                    after a few classes and self-study.
-                </p>
+                    <h3 class="project-name">This Website!</h3>
+                    <p class="project-desc">
+                        As a member of UNC's CS + Social Good Education Team, this
+                        website is a practice project to show my knowledge of HTML & CSS
+                        after a few classes and self-study.
+                    </p>
                 </div>
                 
             </div>
