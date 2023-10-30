@@ -155,48 +155,12 @@ export default function Home() {
           <div id="skills">
               <h3 class="section-title">Skills</h3>
               <div id="skills-flexbox">
-                  <div class="skills-item">
-                      <img src="/icons/java-original.svg" alt="Java" class="skills-intermediate"/>
-                      <div class="skills-overlay">
-                          <p>Java</p>
-                          <p>Intermediate</p>
-                      </div>
-                  </div>
-                  <div class="skills-item">
-                      <img src="/icons/python-original.svg" alt="Python" class="skills-beginner"/>
-                      <div class="skills-overlay">
-                          <p>Python</p>
-                          <p>Beginner</p>
-                      </div>
-                  </div>
-                  <div class="skills-item">
-                      <img src="/icons/csharp-original.svg" alt="C#" class="skills-beginner"/>
-                      <div class="skills-overlay">
-                          <p>C#</p>
-                          <p>Beginner</p>
-                      </div>
-                  </div>
-                  <div class="skills-item">
-                      <img src="/icons/html5-original.svg" alt="HTML" class="skills-learning"/>
-                      <div class="skills-overlay">
-                          <p>HTML</p>
-                          <p>Learning</p>
-                      </div>
-                  </div>
-                  <div class="skills-item">
-                      <img src="/icons/css3-original.svg" alt="CSS" class="skills-learning"/>
-                      <div class="skills-overlay">
-                          <p>CSS</p>
-                          <p>Learning</p>
-                      </div>
-                  </div>
-                  <div class="skills-item">
-                      <img src="/icons/javascript-plain.svg" alt="JavaScript" class="skills-learning"/>
-                      <div class="skills-overlay">
-                          <p>JavaScript</p>
-                          <p>Learning</p>
-                      </div>
-                  </div>
+                  <Skill title="Java" status="Intermediate" image="java-original.svg"/>
+                  <Skill title="Python" status="Beginner" image="python-original.svg"/>
+                  <Skill title="C#" status="Beginner" image="csharp-original.svg"/>
+                  <Skill title="HTML" status="Learning" image="html5-original.svg"/>
+                  <Skill title="CSS" status="Learning" image="css3-original.svg"/>
+                  <Skill title="Javascript" status="Learning" image="javascript-plain.svg"/>
               </div>
           </div>
       </div>
@@ -212,4 +176,14 @@ export default function Home() {
     );
 }
 
-// function 
+function Skill({title, status, image}) {
+  return (
+    <div class={"skills-item"}>
+      <img src={`/icons/${image}`} alt={title} class={`skills-${status.toLowerCase()}`}/>
+      <div class="skills-overlay">
+          <p>{title}</p>
+          <p>{status}</p>
+      </div>
+    </div>
+  );
+}
