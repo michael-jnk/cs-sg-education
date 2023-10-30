@@ -115,31 +115,40 @@ export default function Home() {
                       </div>
                   </div>
                   <div id="project-example">
-                      <h3 class="project-name project-default">Click on a project!</h3>
-                      <p class="project-desc project-default">...</p>
-                      <h3 class="project-name project-java">Java Swing Projects</h3>
-                      <ul class="project-desc project-java">
-                          <li>Various games made in Java's Swing and Graphics libraries</li>
-                          <li>Applying intermediate Java skills and object-oriented concepts like
-                              Inheritance, Polymorphism, and Abstraction</li>
-                          <li>Includes a demake of Wii Play's "Tanks", a replication of one of
-                              the "Worms" games, and a test 3D-wireframe space game</li>
-                      </ul>
-                      <h3 class="project-name project-gamejam">2023 North Carolina Collegiate Game Jam</h3>
-                      <p class="project-desc project-gamejam">
-                          My first game jam, on October 14th - 22nd. This is in-progress,
-                          with my 4 teammates and I still hard at work for the rest of the
-                          week!
-                      </p>
-                      <p class="project-desc project-gamejam">
-                          We are currently using Godot and gdscript to create our game.
-                      </p>
-                      <h3 class="project-name project-site">This Website!</h3>
-                      <p class="project-desc project-site">
-                          As a member of UNC's CS + Social Good Education Team, this
-                          website is a practice project to show my knowledge of HTML & CSS
-                          after a few classes and self-study.
-                      </p>
+                      <div class="project-default">
+                          <h3 class="project-name">Click on a project!</h3>
+                          <p class="project-desc">...</p>
+                      </div>
+                      <div class="project-java">
+                        <h3 class="project-name">Java Swing Projects</h3>
+                        <ul class="project-desc">
+                            <li>Various games made in Java's Swing and Graphics libraries</li>
+                            <li>Applying intermediate Java skills and object-oriented concepts like
+                                Inheritance, Polymorphism, and Abstraction</li>
+                            <li>Includes a demake of Wii Play's "Tanks", a replication of one of
+                                the "Worms" games, and a test 3D-wireframe space game</li>
+                        </ul>
+                      </div>
+                      <div class="project-gamejam">
+                        <h3 class="project-name">2023 North Carolina Collegiate Game Jam</h3>
+                        <p class="project-desc">
+                            My first game jam, on October 14th - 22nd. This is in-progress,
+                            with my 4 teammates and I still hard at work for the rest of the
+                            week!
+                        </p>
+                        <p class="project-desc">
+                            We are currently using Godot and gdscript to create our game.
+                        </p>
+                      </div>
+                      <div class="project-site">
+                        <h3 class="project-name">This Website!</h3>
+                        <p class="project-desc">
+                            As a member of UNC's CS + Social Good Education Team, this
+                            website is a practice project to show my knowledge of HTML & CSS
+                            after a few classes and self-study.
+                        </p>
+                      </div>
+                      
                   </div>
               </div>
           </div>
@@ -202,3 +211,5 @@ export default function Home() {
   </body>
     );
 }
+
+// function 

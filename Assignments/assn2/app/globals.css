@@ -344,27 +344,29 @@ body {
           }
       }
       >#project-example {
-          width:100%;
-          padding: 2%;
-          border: 2px solid var(--hl-color);
-          border-radius: 7px;
-          background-color: var(--bg-color);
-          > :not(.project-default) {
-              display: none;
-          }
-          >h3 {
-              color: var(--hl-color);
-              font-weight: 600;
-              font-size: 2.5cqw;
-          }
-          >p, & li {
-              color: var(--text-color);
-              font-size: 2cqw;
-          }
-          >ul {
-              padding-left: 3%;
-              list-style-type:circle;
-          }
+            width:100%;
+            padding: 2%;
+            border: 2px solid var(--hl-color);
+            border-radius: 7px;
+            background-color: var(--bg-color);
+            > :not(.project-default) {
+                display: none;
+            }
+            >div {
+                >h3 {
+                    color: var(--hl-color);
+                    font-weight: 600;
+                    font-size: 2.5cqw;
+                }
+                >p, & li {
+                    color: var(--text-color);
+                    font-size: 2cqw;
+                }
+                >ul {
+                    padding-left: 3%;
+                    list-style-type:circle;
+                }
+            }
       }
   }
   >.section-title {
