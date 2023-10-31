@@ -108,8 +108,8 @@ export default function Home() {
               <h3 class="section-title">Skills</h3>
               <div id="skills-flexbox">
                   <Skill title="Java" status="Intermediate" image="java-original.svg"/>
+                  <Skill title="Godot" status="Beginner" image="godot-original.svg"/>
                   <Skill title="Python" status="Beginner" image="python-original.svg"/>
-                  <Skill title="C#" status="Beginner" image="csharp-original.svg"/>
                   <Skill title="HTML" status="Learning" image="html5-original.svg"/>
                   <Skill title="CSS" status="Learning" image="css3-original.svg"/>
                   <Skill title="Javascript" status="Learning" image="javascript-plain.svg"/>
