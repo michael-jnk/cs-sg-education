@@ -49,8 +49,9 @@ export default function Home() {
               </p>
               <p>
                   Currently, I'm learning basic web development, both on my own and as a part of
-                  UNC's Computer Science + Social Good Education Team. I am learning basic HTML, CSS,
-                  and JavaScript, and in the near future I'll be learning React. I also have some
+                  UNC's Computer Science + Social Good Education Team. I know basic HTML, CSS,
+                  and JavaScript, and I'm currently learning React and Next.js. I just learned
+                  how to use Godot for a game jam and hackathon, and I also have some
                   personal projects I am working on, to be published sometime in the future!
               </p>
           </div>
@@ -63,8 +64,7 @@ export default function Home() {
                       <ul>
                           <li>Computer Science, B.S.</li>
                           <li>Relevant Courses: <i>Data Structures</i></li>
-                          <li>Activities: <i>CS+SG, Game Development Club, Quantum Computing Club,
-                              Helping Hands Project
+                          <li>Activities: <i>CS+Social Good, Game Development Club, Black in Technology
                           </i></li>
                       </ul>
                   </div>
